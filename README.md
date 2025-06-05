@@ -1,6 +1,10 @@
 # BCR_Final_2
 
-Main Reference for SD Card Read/Write Module: https://blog.naver.com/PostView.naver?blogId=eziya76&logNo=221188701172&redirect=Dlog&widgetTypeCall=true&noTrackingCode=true&directAccess=false
+## Introduction
+
+The project is using my CNN1 model to test the first 1,000 validation images from CIFAR-10 dataset using STM32F4 Disocvery. The results from STM32CubeIDE have been compared with the Google Colab version.
+
+We use main Reference for SD Card Read/Write Module: https://blog.naver.com/PostView.naver?blogId=eziya76&logNo=221188701172&redirect=Dlog&widgetTypeCall=true&noTrackingCode=true&directAccess=false
 
 ## Hardware Needed
 
@@ -163,3 +167,22 @@ FINISHED FIRST 1000 IMAGES!
 - Average inference time after running 1000 first images: 356 ms
 - Total inference time after running 1000 first images: 356.53 (s)
 ```
+
+## Conclusion
+
+The STM32 project runs with no errors and no warnings.
+
+Testing the first 1,000 validation images from CIFAR-10 dataset using STM32F4 Disocvery gives us:
+- Accruacy after running 1000 first images: 59.00%
+- Average inference time after running 1000 first images: 356 ms
+- Total inference time after running 1000 first images: 356.53 (s)
+The confidence and result (TRUE/FALSE) of each validation image is exactly correct when comparing STM32CubeIDE run with Google Colab run. So do the accruacy.
+
+However, the Google-Colab run gives a faster inference time:
+- Average inference time after running 1000 first images: 68 ms
+- Total inference time after running 1000 first images: 68.49 (s)
+
+Memory usage in STM32F4 Discovery:
+- Flash usage: ~81KB out of 1MB (~8%)
+- RAM usage: ~31KB out of 192KB (~16%)
+- Total RAM needed: data + bss = 532 + 30,380 = 30,912 bytes
