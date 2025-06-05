@@ -4,7 +4,7 @@
 
 The project is using my CNN1 model to test the first 1,000 validation images from CIFAR-10 dataset using STM32F4 Discovery. The results from STM32CubeIDE have been compared with the Google Colab version.
 
-We use main eeference for SD Card Read/Write Module: https://blog.naver.com/PostView.naver?blogId=eziya76&logNo=221188701172&redirect=Dlog&widgetTypeCall=true&noTrackingCode=true&directAccess=false
+We use main reference for SD Card Read/Write Module: https://blog.naver.com/PostView.naver?blogId=eziya76&logNo=221188701172&redirect=Dlog&widgetTypeCall=true&noTrackingCode=true&directAccess=false
 
 ## Hardware Needed
 
@@ -172,15 +172,12 @@ FINISHED FIRST 1000 IMAGES!
 
 The STM32 project runs with no errors and no warnings.
 
-Testing the first 1,000 validation images from CIFAR-10 dataset using STM32F4 Disocvery gives us:
+Testing the first 1,000 validation images from CIFAR-10 dataset using STM32F4 Discovery gives us:
 - Accruacy after running 1000 first images: 59.00%
-- Average inference time after running 1000 first images: 356 ms
-- Total inference time after running 1000 first images: 356.53 (s)
-The confidence and result (TRUE/FALSE) of each validation image is exactly correct when comparing STM32CubeIDE run with Google Colab run. So do the accruacy.
+- Average inference time after running 1000 first images: 356 ms [(356 - 68) ÷ 68 × 100 = 423.5% slower]
+- Total inference time after running 1000 first images: 356.53 (s) [(356.53 - 68.49) ÷ 68.49 × 100 = 420.6% slower]
 
-However, the Google-Colab run gives a faster inference time:
-- Average inference time after running 1000 first images: 68 ms
-- Total inference time after running 1000 first images: 68.49 (s)
+The confidence and result (TRUE/FALSE) of each validation image is exactly correct when comparing STM32CubeIDE run with Google Colab run. So do the accruacy.
 
 Memory usage in STM32F4 Discovery:
 - Flash usage: ~81KB out of 1MB (~8%)
