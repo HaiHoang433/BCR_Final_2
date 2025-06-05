@@ -185,3 +185,5 @@ Memory usage in STM32F4 Discovery:
 - Flash usage: ~81KB out of 1MB (~8%)
 - RAM usage: ~31KB out of 192KB (~16%)
 - Total RAM needed: data + bss = 532 + 30,380 = 30,912 bytes
+
+Final clip: https://mega.nz/file/gYgxnB4S#grjGxa1u2WfYnPyNiakJRdKtuXbKVhnLrRe3UvHpsk8
