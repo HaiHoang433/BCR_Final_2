@@ -32,7 +32,7 @@ Configure .ioc file in STM32CubeIDE,
 
 ## Second Implementation
 
-- 
+- Run the cifar10_training_parameters_gen_evaluation_no1.ipynb. Follow the instructions in that file entirely.
 
 ## STM32 Code Implementation
 
