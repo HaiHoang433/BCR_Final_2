@@ -16,7 +16,7 @@ This is the connection between STM32F4 Discovery and SD Card Module:
 
 ![image](https://github.com/user-attachments/assets/13ddb860-82f9-4bf1-b9bd-370524c03294)
 
-## Implementation
+## First Implementation
 
 - Run the cifar10_validation_images_txt_generated.ipynb in Google Colab
 - After running, the .ipynb file will generate 2 zip folders of "[cifar10_essential](https://mega.nz/folder/dJxCEIha#ggBgeCuhP4gDa195bdPYaw/folder/QMBiQZjY)" and "[cifar10_full_dataset](https://mega.nz/folder/dJxCEIha#ggBgeCuhP4gDa195bdPYaw/folder/gAAg1ZjS)"
@@ -28,10 +28,16 @@ Configure .ioc file in STM32CubeIDE,
 - SPI1: Mode to "Full-Duplex Master".
 - FATFS (User-defined): USE_LFN to "Enabled with static working buffer on the BSS"; MAX_SS to "4096".
 - Set pin PC4 to GPIO_Output.
+- In clock configuration, configure HCLK to a maximum of 168 MHz.
 
-## Code Implementation
+## Second Implementation
+
+- 
+
+## STM32 Code Implementation
 
 - Adding fatfs_sd.c and fatfs_sd.h
+- Adding cnn_params.h and cnn_params.c
 - In stm32f4xx_it.c, adding codes at:
   + /* USER CODE BEGIN 0 */
   + void SysTick_Handler(void)
