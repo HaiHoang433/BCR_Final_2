@@ -37,6 +37,8 @@ Configure .ioc file in STM32CubeIDE,
 ## Second Implementation
 
 - Run the cifar10_training_parameters_gen_evaluation_no1.ipynb. Follow the instructions in that file entirely.
+  + Use Python 3
+  + Use T4 GPU
 
 ## STM32 Code Implementation
 
@@ -174,8 +176,8 @@ The STM32 project runs with no errors and no warnings.
 
 Testing the first 1,000 validation images from CIFAR-10 dataset using STM32F4 Discovery gives us:
 - Accruacy after running 1000 first images: 59.00%
-- Average inference time after running 1000 first images: 356 ms [(356 - 68) ÷ 68 × 100 = 423.5% slower]
-- Total inference time after running 1000 first images: 356.53 (s) [(356.53 - 68.49) ÷ 68.49 × 100 = 420.6% slower]
+- Average inference time after running 1000 first images: 356 ms [(356 - 68) ÷ 68 × 100 = 423.5% slower compared with Google Colab]
+- Total inference time after running 1000 first images: 356.53 (s) [(356.53 - 68.49) ÷ 68.49 × 100 = 420.6% slower compared with Google Colab]
 
 The confidence and result (TRUE/FALSE) of each validation image is exactly correct when comparing STM32CubeIDE run with Google Colab run. So do the accruacy.
 
