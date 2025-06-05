@@ -47,8 +47,57 @@ Configure .ioc file in STM32CubeIDE,
    + /* USER CODE BEGIN 2 */
    + /* USER CODE BEGIN 3 */
 
-Then debug the project!
+## Debug the Project
 
-![image](https://github.com/user-attachments/assets/4a0ac299-c88d-4fde-b94f-96ad51a8e86b)
+### The SWV ITM Data Console
 
-Here is the result: https://mega.nz/file/pRYk2apC#6h5KBV-rVbGdtpFFvwjA-nE6wup5yWI5PuW6SYQuTkc
+```
+*** CIFAR-10 Full Dataset Reader ***
+
+SD Card mounted successfully!
+SD CARD Total Size: 	31184896 KB
+SD CARD Free Space: 	31077136 KB
+
+Checking for CIFAR-10 batch files:
+   [â] Found batch file: cifar10_batch_10.txt (10999444 bytes)
+   [â] Found batch file: cifar10_batch_1.txt (11026160 bytes)
+   [â] Found batch file: cifar10_batch_2.txt (11051158 bytes)
+   [â] Found batch file: cifar10_batch_3.txt (11035580 bytes)
+   [â] Found batch file: cifar10_batch_4.txt (11064696 bytes)
+   [â] Found batch file: cifar10_batch_5.txt (11007690 bytes)
+   [â] Found batch file: cifar10_batch_6.txt (10985103 bytes)
+   [â] Found batch file: cifar10_batch_7.txt (11022456 bytes)
+   [â] Found batch file: cifar10_batch_8.txt (11027903 bytes)
+   [â] Found batch file: cifar10_batch_9.txt (10993472 bytes)
+
+Found 10 of 10 batch files
+Opening batch file: cifar10_batch_1.txt
+
+Ready to process all 10,000 CIFAR-10 images!
+Starting main loop...
+
+Image #0 (Batch 1): Label=3, Avg RGB=(110,110,104)
+The model predicts to be label 6 with confidence 40.26% and inference time 354 ms
+FALSE
+Image #1 (Batch 1): Label=8, Avg RGB=(150,154,160)
+The model predicts to be label 8 with confidence 96.58% and inference time 358 ms
+TRUE
+Image #2 (Batch 1): Label=8, Avg RGB=(121,133,143)
+The model predicts to be label 8 with confidence 27.53% and inference time 355 ms
+TRUE
+...
+Image #997 (Batch 1): Label=1, Avg RGB=(94,108,110)
+The model predicts to be label 9 with confidence 57.45% and inference time 347 ms
+FALSE
+Image #998 (Batch 1): Label=3, Avg RGB=(98,106,87)
+The model predicts to be label 3 with confidence 87.31% and inference time 341 ms
+TRUE
+Image #999 (Batch 1): Label=8, Avg RGB=(153,145,150)
+The model predicts to be label 8 with confidence 65.84% and inference time 359 ms
+TRUE
+
+FINISHED FIRST 1000 IMAGES!
+- Accruacy after running 1000 first images: 59.00%
+- Average inference time after running 1000 first images: 356 ms
+- Total inference time after running 1000 first images: 356.53 (s)
+```
