@@ -49,6 +49,10 @@ Configure .ioc file in STM32CubeIDE,
 
 ## Debug the Project
 
+First of all, these must be done!
+
+![image](https://github.com/user-attachments/assets/298998bc-32bf-4437-ab7d-1fa6ba0514ff)
+
 ### Console
 
 After cleaning project then building project,
