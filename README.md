@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The project is using my CNN1 model to test the first 1,000 validation images from CIFAR-10 dataset using STM32F4 Disocvery. The results from STM32CubeIDE have been compared with the Google Colab version.
+The project is using my CNN1 model to test the first 1,000 validation images from CIFAR-10 dataset using STM32F4 Discovery. The results from STM32CubeIDE have been compared with the Google Colab version.
 
-We use main Reference for SD Card Read/Write Module: https://blog.naver.com/PostView.naver?blogId=eziya76&logNo=221188701172&redirect=Dlog&widgetTypeCall=true&noTrackingCode=true&directAccess=false
+We use main eeference for SD Card Read/Write Module: https://blog.naver.com/PostView.naver?blogId=eziya76&logNo=221188701172&redirect=Dlog&widgetTypeCall=true&noTrackingCode=true&directAccess=false
 
 ## Hardware Needed
 
